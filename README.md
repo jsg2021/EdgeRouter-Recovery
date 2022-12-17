@@ -1,8 +1,10 @@
 # EdgeRouter-Recovery
 
 Install a TFTP Server on a computer attached to the local network, or direct to eth0. 
+
 <details>
-<summary>macOS tftp</summary>
+    <summary>macOS tftp server</summary>
+
 ```bash
 sudo launchctl load -F /System/Library/LaunchDaemons/tftp.plist
 sudo launchctl start com.apple.tftpd
@@ -12,7 +14,9 @@ sudo chmod 777 /private/tftpboot
 sudo launchctl stop com.apple.tftpd
 sudo launchctl unload -F /System/Library/LaunchDaemons/tftp.plist
 ```
+
 </details>
+
 Use the following commands to boot:
 
 ```shell
